@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Stride</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img id="logo" src="./Pictures/Symbol B.white.jpg" alt="Cloud Stride Logo" class="logo">
+            <h1 onmouseover="changeStyle(this)" onmouseout="returStyle(this)">Cloud Stride</h1>
+            <nav>
+                <ul>
+                    <li><div id="florida-time"></div></li>
+                </ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#services" class="dropbtn">Services</a>
+                        <div class="dropdown-content">
+                            <a href="website-development.html">Website Development</a>
+                            <a href="content-creation.html">Content Creation</a>
+                            <a href="branding-strategy.html">Branding and Strategy</a>
+                            <a href="digital-marketing.html">Digital Marketing</a>
+                            <a href="app-development.html">Application Development</a>
+                            <a href="courier-shipment.html">Courier & Shipment</a>
+                            <a href="ecommerce-development.html">E-commerce Stores Development</a>
+                        </div>
+                    </li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#contact" class="number">+1 (305) 963-5104</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>We Develop Your IT World</h2>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h1>Our Services</h1>
+        <div class="service-video">
+            <h3>Watch Our Service Video</h3>
+            <video controls width="100%" max-width="560px">
+                <source src="./Pictures/services.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <blockquote>
+            <p>"Cloud Stride transformed our IT infrastructure. Highly recommend!"</p>
+            <footer>- Happy Client</footer>
+        </blockquote>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="response"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cloud Stride. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
